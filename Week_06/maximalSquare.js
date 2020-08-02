@@ -18,7 +18,7 @@ var maximalSquare = function (matrix) {
 
     for (let i = 0; i < rows + 1; i++) {
         if (i === 0) {
-            dp[i] = Array(cols + 1).fill(0)
+            dp[i] = new Array(cols + 1).fill(0)
         } else {
             dp[i] = [0];
         }
